@@ -14,7 +14,7 @@ describe('clear-timeouts', function() {
   it('should clear timeouts', function(done) {
     setTimeout(function() {
       clear();
-      assert(j === 2);
+      assert.strictEqual(j, 2);
       done();
     }, 51);
   });
@@ -23,7 +23,7 @@ describe('clear-timeouts', function() {
     setTimeout(incr, 50);
     setTimeout(function() {
       clear();
-      assert(j === 3);
+      assert.strictEqual(j, 3);
       done();
     }, 101);
   });
