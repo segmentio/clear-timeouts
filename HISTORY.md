@@ -1,3 +1,8 @@
+vNEXT / 2016-06-13
+==================
+
+  * Override `global.setTimeout` with a listener that explicitly tracks IDs, and only clear timeouts that are pending since installing the listener
+
 1.0.0 / 2016-05-30
 ==================
 
